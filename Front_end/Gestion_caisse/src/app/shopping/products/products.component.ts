@@ -49,25 +49,13 @@ export class ProductsComponent implements OnInit {
 
     getProductIndex(product: Product): number {
         return this.ecommerceService.ProductOrders.productOrders.findIndex(value => value===product);
-            // (value => value.product === product);
+            // (value => value.product === product):;
     }
 
     isProductSelected(product: Product): boolean {
         return this.getProductIndex(product) > -1;
     }
 
-    // loadProducts() {
-    //     this.ecommerceService.getAllProducts()
-    //         .subscribe(
-    //             (products: any[]) => {
-    //                 this.products = products;
-    //                 this.products.forEach(product => {
-    //                     this.productOrders.push(new ProductOrder(product, 0));
-    //                 })
-    //             },
-    //             (error) => console.log(error)
-    //         );
-    // }
 
     loadProducts(){
         this.ecommerceService.getAllProducts().subscribe(
