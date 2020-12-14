@@ -3,7 +3,7 @@ Tout d'abord, nous configurons Django Project avec un connecteur MongoDB. Ensuit
 
 
 
-##### Architecture
+###### Architecture
 
 Ce diagramme montre l'architecture de notre application Djang CRUD Rest Apis avec la base de données MongoDB:
 ![alt text](https://github.com/AchrefBenOmrane/DataGenius_gestion_caisse/blob/master/Back_end/django-mongodb-architecture.png?raw=true)
@@ -16,7 +16,7 @@ Ce diagramme montre l'architecture de notre application Djang CRUD Rest Apis ave
 </ul>
 </b>
 
-##### Technologie
+###### Technologie
 <ul>
 <li>Python 3.7</li>
 <li>Django 2.1.15</li>
@@ -26,7 +26,7 @@ Ce diagramme montre l'architecture de notre application Djang CRUD Rest Apis ave
 <li>MongoDB 3.4 or higher</li>
 </ul>
 
-Structure du projet
+###### Structure du projet
 Voici la structure de répertoires de notre projet Django:
 
 ![alt text](https://github.com/AchrefBenOmrane/DataGenius_gestion_caisse/blob/master/Back_end/Structure.PNG?raw=true)
