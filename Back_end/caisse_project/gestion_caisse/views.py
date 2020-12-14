@@ -10,11 +10,12 @@ from django.http import Http404
 from rest_framework import status
 import datetime
 
+#Fonction qui réccupère et stocke les produit à partir et vers la base des données
 @api_view(['GET','POST'])
 def show_list(request):
     if(request.method=="GET"):
-        r1= caisse.objects.all()
-        r2= CaisseSerializer(r1, many=True)
+        r1= caisse.objects.all()#Récupperer tout les objet de la table Caisse de la base des données
+        r2= CaisseSerializer(r1, many=True)#Sérialisations des données
         return Response (r2.data) 
     
     elif (request.method=="POST"):
@@ -22,9 +23,9 @@ def show_list(request):
         if (serializers.is_valid()):
             serializers.save()
             return Response(serializers.data, status=200)
-        return Response(serializers.errors, status=status.HTTP_400_BAD_REQUEST)
+        return Response(serializers.errors, status=status.HTTP_400_BAD_REQUEST)#Réponse JSON
     
-    
+#Fonction qui réccupère et stocke les produit du client à partir et vers la base des données
 @api_view(['GET','POST'])
 def show_list_panier(request):
     if(request.method=="GET"):
@@ -39,7 +40,7 @@ def show_list_panier(request):
             return Response(serializers.data, status=200)
         return Response(serializers.errors, status=status.HTTP_400_BAD_REQUEST)
     
-
+#Fonction qui affiche la ticket de caisse et stocke les produit acheter à partir et vers la base des données
 @api_view(['GET','POST'])
 def detail_ticket(request):
     if(request.method=="GET"):
