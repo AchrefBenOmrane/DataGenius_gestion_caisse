@@ -1,22 +1,22 @@
 
-First, we setup Django Project with a MongoDB Connector. Next, we create Rest Api app, add it with Django Rest Framework to the project. Next, we define data model and migrate it to the database. Then we write API Views and define Routes for handling all CRUD operations (including custom finder).
+Tout d'abord, nous configurons Django Project avec un connecteur MongoDB. Ensuite, nous créons l'application Rest Api, l'ajoutons avec Django Rest Framework au projet. Ensuite, nous définissons le modèle de données et le migrons vers la base de données. Ensuite, nous écrivons des vues d'API et définissons des routes pour gérer toutes (y compris la recherche personnalisée).
 
 
 
 ##### Architecture
 
-This diagram shows the architecture of our Django CRUD Rest Apis App with MongoDB database:
+Ce diagramme montre l'architecture de notre application Djang CRUD Rest Apis avec la base de données MongoDB:
 ![alt text](https://github.com/AchrefBenOmrane/DataGenius_gestion_caisse/blob/master/Back_end/django-mongodb-architecture.png?raw=true)
 <b>
 <ul>
-<li>HTTP requests will be matched by Url Patterns and passed to the Views</li>
-<li>Views processes the HTTP requests and returns HTTP responses (with the help of Serializer)</li>
-<li>Serializer serializes/deserializes data model objects</li>
-<li>Models contains essential fields and behaviors for CRUD Operations with MongoDB Database</li>
+<li>Les requêtes HTTP seront mises en correspondance par des modèles d'URL et transmises aux vues</li>
+<li>Views traite les requêtes HTTP et renvoie les réponses HTTP (avec l'aide de Serializer)</li>
+<li>Le sérialiseur sérialise / désérialise les objets de modèle de données</li>
+<li>Les modèles contiennent des champs et des comportements essentiels pour les opérations CRUD avec la base de données MongoDB</li>
 </ul>
 </b>
 
-##### Technology
+##### Technologie
 <ul>
 <li>Python 3.7</li>
 <li>Django 2.1.15</li>
@@ -26,7 +26,7 @@ This diagram shows the architecture of our Django CRUD Rest Apis App with MongoD
 <li>MongoDB 3.4 or higher</li>
 </ul>
 
-Project structure
-This is the directory structure of our Django Project:
+Structure du projet
+Voici la structure de répertoires de notre projet Django:
 
 ![alt text](https://github.com/AchrefBenOmrane/DataGenius_gestion_caisse/blob/master/Back_end/Structure.PNG?raw=true)
