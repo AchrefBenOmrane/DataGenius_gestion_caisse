@@ -3,7 +3,7 @@ First, we setup Django Project with a MongoDB Connector. Next, we create Rest Ap
 
 
 
-#####Architecture
+##### Architecture
 
 This diagram shows the architecture of our Django CRUD Rest Apis App with MongoDB database:
 ![alt text](https://github.com/AchrefBenOmrane/DataGenius_gestion_caisse/blob/master/Back_end/django-mongodb-architecture.png?raw=true)
@@ -16,7 +16,7 @@ This diagram shows the architecture of our Django CRUD Rest Apis App with MongoD
 </ul>
 </b>
 
-#####Technology
+##### Technology
 <ul>
 <li>Python 3.7</li>
 <li>Django 2.1.15</li>
