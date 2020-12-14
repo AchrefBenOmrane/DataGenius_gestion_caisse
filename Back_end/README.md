@@ -3,24 +3,24 @@ First, we setup Django Project with a MongoDB Connector. Next, we create Rest Ap
 
 
 
-
-#Architecture
+<b>Architecture</b>
 This diagram shows the architecture of our Django CRUD Rest Apis App with MongoDB database:
 ![alt text](https://github.com/AchrefBenOmrane/DataGenius_gestion_caisse/blob/master/Back_end/django-mongodb-architecture.png?raw=true)
-
+<b>
 <ul>
 <li>HTTP requests will be matched by Url Patterns and passed to the Views</li>
 <li>Views processes the HTTP requests and returns HTTP responses (with the help of Serializer)</li>
 <li>Serializer serializes/deserializes data model objects</li>
 <li>Models contains essential fields and behaviors for CRUD Operations with MongoDB Database</li>
 </ul>
+</b>
 
-#Technology
+<b>Technology<b>
 <ul>
 <li>Python 3.7</li>
 <li>Django 2.1.15</li>
 <li>Django Rest Framework 3.11.0</li>
-<li>djongo 1.3.1<li>
+<li>djongo 1.3.1</li>
 <li>django-cors-headers 3.2.1</li>
 <li>MongoDB 3.4 or higher</li>
 </ul>
